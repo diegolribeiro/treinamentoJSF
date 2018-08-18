@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	<h:head/>
+	<h:body>
+		<h:form>
+		<h:messages/>
+			<fieldset>
+			<legend>Formulário de Cadastro de Evento</legend>
+			
+			<h:panelGrid columns="2">
+				<h:outputLabel value="Código do Evento" for="codigoEvento"/>
+				<h:inputText id="codigoEvento" value="#{eventoBean.evento.codigoExterno}"/>
+				
+				<h:outputLabel value="Descrição do Evento" for="descricaoEvento"/>
+				<h:inputText id="descricaoEvento" value="#{eventoBean.evento.descricao}"/>
+				
+				<h:outputLabel value="Data Inicial" for="dataInicial"/>
+				<h:inputText id="dataInicial" value="#{eventoBean.evento.dataInicial.time}">
+					<f:convertDateTime pattern="dd/MM/yyyy" timeZone="America/Sao_Paulo"/>
+				</h:inputText>
+				
+				<h:outputLabel value="Data Final" for="dataFinal"/>
+				<h:inputText id="dataFinal" value="#{eventoBean.evento.dataFinal.time}">
+					<f:convertDateTime pattern="dd/MM/yyyy" timeZone="America/Sao_Paulo"/>
+				</h:inputText>
+				
+				
+				
+				<h:outputLabel value="Descrição do Evento" for="descricaoEvento"/>
+				<h:commandButton value="Gravar" action="#{eventoBean.gravarEvento}"/>
+			</h:panelGrid>
+		
+		</fieldset>
+		</h:form>
+	
+	</h:body>
+
+</html>

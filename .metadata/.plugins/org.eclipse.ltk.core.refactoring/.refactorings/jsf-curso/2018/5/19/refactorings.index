@@ -1,0 +1,5 @@
+1525819443886	Encapsulate field 'descricaoEvento'
+1525819447637	Encapsulate field 'codigoExterno'
+1525819451292	Encapsulate field 'id'
+1525819496645	Encapsulate field 'tipoEvento'
+1525819557424	Rename package 'br.com.diego.DAO'

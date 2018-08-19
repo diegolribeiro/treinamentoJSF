@@ -4,3 +4,6 @@ recommenders/
 .recommenders/
 recommenders
 metadata
+.metadata/.log
+.metadata/.log/
+/.metadata/.log
